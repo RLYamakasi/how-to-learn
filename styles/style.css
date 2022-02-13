@@ -4,16 +4,16 @@
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-a{
-  text-decoration: none;
-}
+
 .header {
+  display: flex;
   position: relative;
   background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
 }
+
 .header__title{
   align-self: center;
   width: 730px;
@@ -23,10 +23,11 @@ a{
   font-weight: bold;
   z-index: 2;
 }
+
 .header__subtitle{
   position: absolute;
-  align-self: flex-end;
-  padding-left: 64px;
+  bottom: 0;
+  left: 64px;
   padding-bottom: 30px;
   width: 388px;
   line-height: 25px;
@@ -34,104 +35,137 @@ a{
   font-weight: normal;
   z-index: 2;
 }
+
+.header__link{
+  text-decoration: none;
+  color:#2f80ed;
+}
+
 .header__main-illustration{
   position: absolute;
   bottom:0;
   right: 0;
-  width: 765;
+  width: 765px;
   height: 608px;
   z-index: 1;
+  object-fit: cover;
 }
+
 .header__square-pic{
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
   right:0;
-  width: 568;
+  width: 568px;
   height: 568px;
   z-index: 0;
 }
-.logo{
+
+.logo_place_header{
   width: 183px;
   height: 32px;
-}
-.logo_place_header{
   position: absolute;
   align-self: baseline;
   padding-top: 30px;
-  padding-left: 64px;
+  left: 64px;
 }
+
 .description{
+  display: flex;
   padding-top: 100px;
   justify-content:center;
 }
-.description__two-columns{
+
+.two-columns{
+  display: flex;
   width:80%;
   justify-content: space-between;
- 
 }
-.description_two-columns_brief{
+
+.two-columns__brief{
   color: #2f80ed;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
-.description__main-text{
+
+.two-columns__main-text{
   width: 80%;
   min-width: 784px;
 }
-.description_main-text_paragraph{
+
+.two-columns_main-text_paragraph{
+  margin:0 0 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
+.two-columns_main-text_paragraph:last-of-type(){
+ margin-bottom: 0;
+}
+
 .description_span-accent{
   font-weight: bold;
 }
+
 .digits{
   padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .section-title{ 
   margin: 0 auto 20px;
+  display: flex;
   width: 60%;
   justify-content: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
+
 .section-subtitle{
+  margin: 0 auto;
+  display: flex;
   width: 60%;
   justify-content: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
 .table{
+  margin: 0 auto;
+  display: flex;
   flex-wrap: wrap;
   width:1100px;
   list-style: none;
   justify-content: space-between;
 }
-.digits_table-cell{
+
+.table__cell{
   padding-top: 60px;
   width: 250px;
 }
-.cell_header{
+
+.table__heading{
   margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
-.digits_cell_text{
-  margin: 0;
-  padding-top: 20px;
+
+.table__text{
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
 .feynman{
-  height: 890px;
+  box-sizing: border-box;
+  min-height: 890px;
   background-image: url("../images/feynman.png");
   background-repeat:no-repeat;
   background-size: 867px 637px;
@@ -140,7 +174,10 @@ a{
   background-color: #f2f2f2;
   padding-top: 100px;
 }
+
 .feynman__title{
+  margin: 0 auto;
+  display: flex;
   text-align: center;
   justify-content: center;
   width: 648px;
@@ -148,15 +185,21 @@ a{
   font-size: 120px;
   font-weight: bold;
 }
+
 .feynman__subtitle{
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
   width: 648px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  padding-top: 70px;
+  margin-top: 70px;
 }
+
 .feynman__link{
+  text-decoration: none;
+  color:#2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -164,29 +207,41 @@ a{
   position: absolute;
   right: 48px;
 }
+
 .table__cell_theme_dark {
+  margin: 0;
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.table__heading_theme_dark{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text_theme_dark{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .kaufman{
   position: relative;
   overflow: hidden;
   background-color: #1f1f1f;
   padding-top: 90px;
   padding-bottom: 90px;
-  z-index: -3;
 }
-.kaufman_table-cell{
-  margin: 0;
-  padding-top: 80px;
-  width: 200px;
-}
+
 .text_theme_dark{
   color: white;
 }
+
 .kaufman_triangle{
+  background-image:url("../images/kaufman-triangle.svg") ;
   width: 877px;
   height: 877px;
   right:-210px;
@@ -194,39 +249,54 @@ a{
   position: absolute;
   z-index: -2;
 }
+
 .copyright__author{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
+
 .footer{
+  display: flex;
   padding-top: 60px;
   background-color: #1f1f1f;
   min-height: 350px;
   justify-content: center;
+  padding-bottom: 40px;
 }
+
 .logo_place_footer{
-  align-self: flex-start;
-  justify-self: flex-start;
+  display: flex;
+  top:0;
+  left:0;
+  width: 183px;
+  height: 35px;
 }
-.columns{
+
+.footer__columns{
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: 90%;
-  padding-bottom: 40px;
 }
-.column_content_copyright{
+
+.footer__column_content_copyright{
+  display: flex;
   position: relative;
   flex-direction: column;
   flex-basis: 711px;
 }
+
 .column-links{
+  display: flex;
   flex-direction: column;
   min-height: 70px;
   justify-content: space-between;
   padding-bottom: 16px;
 }
-.column_copyright_author{
+
+.footer__column_copyright_author{
   position: absolute;
   bottom: 0;
   padding: 18px 0 18px;
@@ -234,32 +304,28 @@ a{
   font-size: 18px;
   font-weight: normal;
 }
-.column-heading{
+
+.footer__column-heading{
   margin-bottom:30px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
-.column-link{
+
+.footer__column-link{
+  text-decoration: none;
   height: 10px;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   color:white;
 }
-.center{
-  margin: 0 auto;
-}
+
 .white-text{
   color:white;
 }
-.blue-link{
-  color:#2f80ed;
-}
+
 .social-icon{
   width: 16px;
   height: 16px;
-}
-.flex-object{
-  display: flex;
 }
