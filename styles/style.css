@@ -28,7 +28,6 @@
 .header__subtitle{
   margin:0;
   position: absolute;
-  bottom: 0;
   left: 64px;
   bottom: 30px;
   width: 388px;
@@ -252,12 +251,6 @@
   top:0;
   position: absolute;
   z-index: -2;
-}
-
-.footer__author{
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .footer{
