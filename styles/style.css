@@ -285,7 +285,7 @@
   width: 90%;
 }
 
-.footer__column-copyright{
+.footer__column_content_copyright{
   display: flex;
   position: relative;
   flex-direction: column;
