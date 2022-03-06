@@ -1,0 +1,15 @@
+@import url(../digits/section-title/section-title.css);
+@import url(../digits/section-title/_theme/section-title_theme_dark.css);
+@import url(../digits/section-subtitle/section-subtitle.css);
+@import url(../digits/section-subtitle/_theme/section-subtitle_theme_dark.css);
+@import url(../digits/table/table.css);
+@import url(../digits/table/__cell/table__cell.css);
+@import url(../digits/table/__cell/__heading/table__heading.css);
+@import url(../digits/table/__cell/__text/table__text.css);
+@import url(../digits/table/_theme/table_theme_dark.css);
+
+
+.digits{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }

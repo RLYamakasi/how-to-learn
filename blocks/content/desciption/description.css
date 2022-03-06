@@ -1,0 +1,12 @@
+@import url(../desciption/two-columns/two-columns.css);
+@import url(../desciption/two-columns/__brief/two-columns__brief.css);
+@import url(../desciption/two-columns/__main-text/two-columns__main-text.css);
+@import url(../desciption/two-columns/__main-text/__paragraph/two-columns__paragraph.css);
+@import url(../desciption/two-columns/__main-text/__paragraph/__span-accent/two-columns__span-accent.css);
+
+.description{
+    display: flex;
+    padding-top: 100px;
+    justify-content:center;
+  }
+  

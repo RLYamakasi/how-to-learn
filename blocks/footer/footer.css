@@ -1,0 +1,18 @@
+@import url(../footer/__logo/logo_place_footer.css);
+@import url(../footer/__columns/footer__columns.css);
+@import url(../footer/__columns/__column-heading/footer__column-heading.css);
+@import url(../footer/__columns/__column-links/footer__column-links.css);
+@import url(../footer/__columns/__column-links/__column-link/footer__column-link.css);
+@import url(../footer/__columns/column_content_copyright/footer__column_content_copyright.css);
+@import url(../footer/__columns/column_content_copyright/__author/footer__author.css);
+@import url(../footer/__columns/__column-links/__column-link/__social-icon/footer__social-icon.css);
+
+.footer{
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 60px;
+    background-color: #1f1f1f;
+    min-height: 350px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
