@@ -1,6 +1,7 @@
 .header {
     display: flex;
     position: relative;
+    overflow: hidden;
     background-color: #f2f2f2;
     height: 100vh;
     min-height: 600px;
