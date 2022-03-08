@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     max-width: 920px;
     margin: auto;
-    justify-content: center;
     column-gap: 100px;
     list-style: none;
+    padding: 0;
 }
