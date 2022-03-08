@@ -6,5 +6,7 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+    z-index: 2;
+    position: relative;
   }
   
